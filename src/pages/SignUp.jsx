@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import {Await, Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 import {AiFillEyeInvisible, AiFillEye } from "react-icons/ai"
 import OAuth from '../components/OAuth'
 import {getAuth, createUserWithEmailAndPassword, updateProfile} from "firebase/auth"
@@ -57,7 +57,7 @@ export default function SignUp() {
                 <form onSubmit={onSubmit}>
                     <div>
                          <input className='mb-6 w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded transition ease-in-out' 
-                          type="name"
+                          type="text"
                           id='name'
                           value={name} 
                           onChange={onChange} 
