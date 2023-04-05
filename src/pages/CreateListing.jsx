@@ -135,7 +135,8 @@ export default function CreateListing() {
             ...formData,
             imgUrls,
             geolocation,
-            timestamp: serverTimestamp()
+            timestamp: serverTimestamp(),
+            userRef: auth.currentUser.uid
         }
 
         delete formDataCopy.images
